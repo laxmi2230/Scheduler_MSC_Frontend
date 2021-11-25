@@ -100,7 +100,7 @@ class Registration extends Component {
       subjectname: this.state.subjectname,
     };
     axios
-      .post("https://mscscheduler1.herokuapp.com/api/usermodel1", data)
+      .post("https://hidden-citadel-09649.herokuapp.com/api/usermodel1", data)
       .then((response) => {
         console.log(response);
         if (response.hasOwnProperty("message")) {
@@ -114,7 +114,7 @@ class Registration extends Component {
         };
         console.log(registered);
         axios
-          .post("https://mscscheduler1.herokuapp.com/api/usermodel1/collections", registered)
+          .post("https://hidden-citadel-09649.herokuapp.com/api/usermodel1/collections", registered)
           .then((res) => {
             console.log(res.data);
             if(res.data.hasOwnProperty("message")){
@@ -138,7 +138,7 @@ class Registration extends Component {
       subjectcode: this.state.subjectcode,
     };
     axios
-      .post("https://mscscheduler1.herokuapp.com/api/usermodel2/seats", blogs)
+      .post("https://hidden-citadel-09649.herokuapp.com/api/usermodel2/seats", blogs)
       .then((response) => this.setState({ seats: response.data }));
   }
 

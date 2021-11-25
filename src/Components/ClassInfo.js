@@ -22,7 +22,7 @@ const Classinfo = (props) => {
  const infos = {
   subjectcode:props.match.params.subjectcode
   };
-  axios.post('https://mscscheduler1.herokuapp.com/api/usermodel1/info',infos)
+  axios.post('https://hidden-citadel-09649.herokuapp.com/api/usermodel1/info',infos)
                             .then(response => {
                               setPosts(response.data);
                             }).catch(error => {

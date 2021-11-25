@@ -89,7 +89,7 @@ class Signup extends Component {
       subjectname: this.state.subjectname,
     };
     axios
-      .post("https://mscscheduler1.herokuapp.com/api/usermodel", registered)
+      .post("https://hidden-citadel-09649.herokuapp.com/api/usermodel", registered)
       .then((response) => {
         console.log(response.data);
       
